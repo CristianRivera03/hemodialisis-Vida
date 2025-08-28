@@ -265,6 +265,9 @@
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
+  .h-17 {
+    height: calc(var(--spacing) * 17);
+  }
   .h-20 {
     height: calc(var(--spacing) * 20);
   }
@@ -285,6 +288,9 @@
   }
   .h-150 {
     height: calc(var(--spacing) * 150);
+  }
+  .h-175 {
+    height: calc(var(--spacing) * 175);
   }
   .h-200 {
     height: calc(var(--spacing) * 200);
@@ -527,6 +533,11 @@
   .md\:hidden {
     @media (width >= 48rem) {
       display: none;
+    }
+  }
+  .md\:h-125 {
+    @media (width >= 48rem) {
+      height: calc(var(--spacing) * 125);
     }
   }
   .md\:min-h-fit {
