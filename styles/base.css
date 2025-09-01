@@ -3,7 +3,13 @@
     background-image: url(/assets/hero-section.jpg);
 }
 
+#heroSectionServices{
+    background-image: url(/assets/hero-services.jpg);
+}
+
 
 #services{
     background-image: url(/assets/health.jpg);
 }
+
+
