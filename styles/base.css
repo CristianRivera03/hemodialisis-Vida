@@ -7,6 +7,9 @@
     background-image: url(/assets/hero-services.jpg);
 }
 
+#heroSectionAboutUs{
+    background-image: url(/assets/heroAboutUs.jpg);
+}
 
 #services{
     background-image: url(/assets/health.jpg);
