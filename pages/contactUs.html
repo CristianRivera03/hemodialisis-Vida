@@ -30,7 +30,11 @@
       <nav
         class="p-4 bg-white md:px-6 flex flex-row justify-between text-gray-800 items-center"
       >
-        <h1>Hemodiálisis + Vida</h1>
+                <!-- Mostrar solo en pantallas grandes (tablet/desktop en adelante) -->
+        <img class="hidden md:block h-24" src="/assets/logotipo.png" alt="logotipo">
+
+        <!-- Mostrar solo en pantallas pequeñas (móvil) -->
+        <img class="block md:hidden h-16" src="/assets/logo.png" alt="logo">
         <div
           class="nav-links duration-500 md:static absolute md:min-h-fit md:w-auto bg-white left-0 top-[-100%] w-full items-center px-5 py-5"
         >
@@ -96,7 +100,7 @@
       <div class="flex-1 flex items-center">
         <div class="text-center mx-auto">
           <h1 class="text-6xl font-bold text-white">Contactanos</h1>
-          <p class="text-3xl mt-5 font-semibold text-white">
+          <p class="sm:text-xl  md:text-3xl mt-5 font-semibold text-white">
             Tu salud renal, nuestra prioridad. ¡Contáctanos y recibe atención
             especializada!
           </p>
@@ -110,7 +114,6 @@
     <!-- End Hero Section -->
 
     <!-- inicio de ContactUs -->
-
     <div class="p-6">
       <h1 class="text-center text-3xl font-bold text-sky-800">
         Horario de Atención
@@ -152,14 +155,17 @@
           </p>
 
           <div class="flex justify-center">
-            <div class="p-3 bg-sky-800 w-fit rounded-full text-white">
+            <div class="">
             <a
+              class="p-3 bg-sky-800 w-fit rounded-full text-white
+            transition-all duration-300 ease-in-out
+            hover:border-2 hover:border-sky-800 hover:bg-white hover:text-sky-800"
               target="_blank"
               rel="noopener noreferrer"
               href="https://maps.app.goo.gl/7avaRXXGp4oVJvF87?g_st=ac"
               >Ver mapa</a
             >
-          </div>
+            </div>
           </div>
         </div>
       </div>

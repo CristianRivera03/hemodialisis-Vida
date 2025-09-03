@@ -21,7 +21,11 @@
         <a class="text-xs md:text-base" href="https://wa.me/+50369954755">6995-4755</a>
       </div>
       <nav class=" p-4 bg-white md:px-6 flex flex-row justify-between text-gray-800 items-center">
-        <h1>Hemodiálisis + Vida</h1>
+                <!-- Mostrar solo en pantallas grandes (tablet/desktop en adelante) -->
+        <img class="hidden md:block h-24" src="/assets/logotipo.png" alt="logotipo">
+
+        <!-- Mostrar solo en pantallas pequeñas (móvil) -->
+        <img class="block md:hidden h-16" src="/assets/logo.png" alt="logo">
         <div class="nav-links duration-500 md:static absolute md:min-h-fit md:w-auto bg-white left-0 top-[-100%] w-full items-center px-5 py-5 ">
           <ul class="flex md:flex-row flex-col md:items-center md:gap-4 gap-6">
             <li>

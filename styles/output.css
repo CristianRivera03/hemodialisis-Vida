@@ -280,6 +280,9 @@
   .ml-4 {
     margin-left: calc(var(--spacing) * 4);
   }
+  .block {
+    display: block;
+  }
   .flex {
     display: flex;
   }
@@ -307,14 +310,26 @@
   .h-1\/5 {
     height: calc(1/5 * 100%);
   }
+  .h-4 {
+    height: calc(var(--spacing) * 4);
+  }
   .h-6 {
     height: calc(var(--spacing) * 6);
+  }
+  .h-10 {
+    height: calc(var(--spacing) * 10);
   }
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
   .h-14 {
     height: calc(var(--spacing) * 14);
+  }
+  .h-16 {
+    height: calc(var(--spacing) * 16);
+  }
+  .h-24 {
+    height: calc(var(--spacing) * 24);
   }
   .h-175 {
     height: calc(var(--spacing) * 175);
@@ -652,6 +667,9 @@
   .text-sky-800 {
     color: var(--color-sky-800);
   }
+  .text-sky-900 {
+    color: var(--color-sky-900);
+  }
   .text-white {
     color: var(--color-white);
   }
@@ -678,6 +696,11 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .transition-all {
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
   .transition-colors {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
@@ -728,6 +751,29 @@
       }
     }
   }
+  .hover\:border {
+    &:hover {
+      @media (hover: hover) {
+        border-style: var(--tw-border-style);
+        border-width: 1px;
+      }
+    }
+  }
+  .hover\:border-2 {
+    &:hover {
+      @media (hover: hover) {
+        border-style: var(--tw-border-style);
+        border-width: 2px;
+      }
+    }
+  }
+  .hover\:border-sky-800 {
+    &:hover {
+      @media (hover: hover) {
+        border-color: var(--color-sky-800);
+      }
+    }
+  }
   .hover\:bg-green-500 {
     &:hover {
       @media (hover: hover) {
@@ -746,6 +792,13 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-sky-400);
+      }
+    }
+  }
+  .hover\:bg-white {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-white);
       }
     }
   }
@@ -772,6 +825,13 @@
       }
     }
   }
+  .hover\:text-sky-800 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-sky-800);
+      }
+    }
+  }
   .hover\:text-white {
     &:hover {
       @media (hover: hover) {
@@ -782,6 +842,26 @@
   .active\:text-sky-400 {
     &:active {
       color: var(--color-sky-400);
+    }
+  }
+  .sm\:hidden {
+    @media (width >= 40rem) {
+      display: none;
+    }
+  }
+  .sm\:h-1 {
+    @media (width >= 40rem) {
+      height: calc(var(--spacing) * 1);
+    }
+  }
+  .sm\:h-5 {
+    @media (width >= 40rem) {
+      height: calc(var(--spacing) * 5);
+    }
+  }
+  .sm\:h-6 {
+    @media (width >= 40rem) {
+      height: calc(var(--spacing) * 6);
     }
   }
   .sm\:border-b-sky-800 {
@@ -804,6 +884,12 @@
       padding-inline: calc(var(--spacing) * 12);
     }
   }
+  .sm\:text-xl {
+    @media (width >= 40rem) {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
   .md\:static {
     @media (width >= 48rem) {
       position: static;
@@ -824,6 +910,11 @@
       margin: calc(var(--spacing) * 12);
     }
   }
+  .md\:block {
+    @media (width >= 48rem) {
+      display: block;
+    }
+  }
   .md\:flex {
     @media (width >= 48rem) {
       display: flex;
@@ -837,6 +928,11 @@
   .md\:h-2\/3 {
     @media (width >= 48rem) {
       height: calc(2/3 * 100%);
+    }
+  }
+  .md\:h-24 {
+    @media (width >= 48rem) {
+      height: calc(var(--spacing) * 24);
     }
   }
   .md\:h-125 {
