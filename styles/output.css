@@ -522,6 +522,9 @@
       background-color: color-mix(in oklab, var(--color-sky-900) 50%, transparent);
     }
   }
+  .bg-transparent {
+    background-color: transparent;
+  }
   .bg-white {
     background-color: var(--color-white);
   }
