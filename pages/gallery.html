@@ -54,35 +54,28 @@
     <!-- End Hero Section -->
 
    
-<!-- inicio de servicios -->
+<!-- inicio de galeria -->
 
     <div class="p-6">
        <h1 class="text-center text-3xl font-bold text-sky-800">Galeria de imagenes</h1>
     </div>
     
-    <div class="grid grid-cols-1 md:grid-cols-3 bg-gray-100 place-items-center gap-6 p-12 m-12 rounded-2xl ">
+    <!-- Contenedor de imágenes -->
+<div id="galleryContainer" class="grid grid-cols-2 md:grid-cols-4 gap-6 p-6"></div>
 
-        <div>
-            <img class="h-1/2" src="/assets/gallery/gallery0.jpeg" alt="doctor asistiendo a paciente">
-        </div>
-
-
-        <div>
-            <img class="h-1/2" src="/assets/gallery/gallery0.jpeg" alt="doctor asistiendo a paciente">
-        </div>
-
-
-        <div>
-            <img class="h-1/2" src="/assets/gallery/gallery0.jpeg" alt="doctor asistiendo a paciente">
-        </div>
+<!-- Modal -->
+<div id="imgModal" class="fixed inset-0 bg-black/80 hidden justify-center items-center z-50">
+  <!-- Botón cerrar -->
+  <span id="closeModal" class="absolute top-4 right-6 text-white text-3xl cursor-pointer">&times;</span>
+  
+  <!-- Imagen en grande -->
+  <img id="modalImage" class="max-w-[90%] max-h-[90%] rounded-lg shadow-lg">
+</div>
 
 
-        <div>
-            <img class="h-1/2" src="/assets/gallery/gallery0.jpeg" alt="doctor asistiendo a paciente">
-        </div>
 
+    
 
-    </div>
 
 
 

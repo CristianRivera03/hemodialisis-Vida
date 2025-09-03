@@ -1,9 +1,10 @@
 const footer = document.getElementById("footer")
+const galleryContainer = document.getElementById("galleryContainer")
 
 
 
 footer.innerHTML = footerContent()
-
+galleryContainer.innerHTML = gallery()
 
 function footerContent (){
     return `
@@ -88,62 +89,45 @@ function footerContent (){
     `;
 }
 
-function heroContent (titulo , imagen){
 
-    return `
-    <div class="bg-sky-400 text-white font-bold justify-between items-center flex flex-row w-auto h-6 p-6">
-        <p class="text-xs md:text-base">
-          4a Calle Oriente #9 Barrio El Calvario Jiquilisco Usulutan
-        </p>
-        <p class="text-xs md:text-base">6995-4755</p>
-      </div>
-      <nav class=" p-4 bg-white md:px-6 flex flex-row justify-between text-gray-800 items-center">
-        <h1>Hemodiálisis + Vida</h1>
-        <div class="nav-links duration-500 md:static absolute md:min-h-fit md:w-auto bg-white left-0 top-[-100%] w-full items-center px-5 py-5 ">
-          <ul class="flex md:flex-row flex-col md:items-center md:gap-4 gap-6">
-            <li>
-              <a class="hover:text-black active:text-sky-400" href="">Inicio</a>
-            </li>
-            <li>
-              <a class="hover:text-black active:text-sky-400" href="/pages/servicios.html">Servicios</a>
-            </li>
-            <li>
-              <a class="hover:text-black active:text-sky-400" href="">¿Quienes somos?</a>
-            </li>
-            <li>
-              <a class="hover:text-black active:text-sky-400" href="">Galeria</a>
-            </li>
-            <li>
-              <a class="hover:text-black active:text-sky-400" href="">Contactenos</a>
-            </li>
-          </ul>
-        </div>
-        
-        
-        <div class="flex items-center gap-6">
-          
-          <div class="bg-sky-400 py-2 px-3 rounded-full hover:scale-110 transition-transform text-white font-bold">
-            <a href="https://wa.me/69954755" target="_blank" rel="noopener noreferrer">Realiza tu cita</a>
-          </div>
-          
-          <ion-icon onclick="onToggleMenu(this)" class="text-3xl cursor-pointer md:hidden" name="menu"></ion-icon>
-        </div>
-      </nav>
-      <!-- Start hero section content-->
-      <div class="flex-1 flex items-center">
-        
-        <div class="text-center mx-auto " >
-          <h1 class="text-6xl font-bold text-white">Centro De Hemodiálisis Mas Vida</h1>
-          <p  class="text-3xl mt-5 font-semibold text-white">Salud y bienestar. Tu cuidado es nuestra prioridad</p>
-          <a  class="bg-sky-400 hover:bg-sky-200  px-5 py-2 inline-block  rounded-full text-white font-bold hover:scale-110 transition-transform mt-5" 
-          href="https://wa.me/+50369954755" 
-          target="_blank" rel="noopener noreferrer">Haz tu cita</a>
-        </div>
-        
-      </div>  
-      <!-- end hero section content -->
-    
-    `;
+function gallery (){
+  let numberPhotos = 29
+  let imgs = ""
 
+  for (let i = 0; i <= numberPhotos; i++ ){
 
+      imgs += (`<div class="aspect-square overflow-hidden rounded-xl shadow-md">
+      <img 
+        class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" 
+        src="/assets/gallery/gallery${i}.jpeg" 
+        onclick="openModal('/assets/gallery/gallery${i}.jpeg')"
+      >
+    </div>`)
+
+  }
+
+  return(imgs)
 }
+
+// Abrir modal
+function openModal(src) {
+  document.getElementById("modalImage").src = src;
+  document.getElementById("imgModal").classList.remove("hidden");
+  document.getElementById("imgModal").classList.add("flex");
+}
+
+// Cerrar modal
+function closeModal() {
+  document.getElementById("imgModal").classList.add("hidden");
+  document.getElementById("imgModal").classList.remove("flex");
+}
+
+// También cerrar si hacen clic en el fondo oscuro
+document.getElementById("imgModal").addEventListener("click", (e) => {
+  if (e.target.id === "imgModal") {
+    closeModal();
+  }
+});
+
+// Cerrar al dar clic en la X
+document.getElementById("closeModal").addEventListener("click", closeModal);
