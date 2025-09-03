@@ -13,44 +13,45 @@ function footerContent (){
          <div class="flex flex-row justify-center gap-6"> 
 
           <!--Whatsapp-->
-          <div class="flex items-center justify-center 
-            bg-white hover:bg-green-500
-            transition-colors duration-300 ease-in-out
-            rounded-full w-12 h-12">
+          <div class="group flex items-center justify-center 
+              bg-white hover:bg-green-500
+              transition-colors duration-300 ease-in-out
+              rounded-full w-12 h-12">
             <a href="https://wa.me/+50369954755">
-              <ion-icon class="text-2xl -m-1.5 text-sky-800 hover:text-white" name="logo-whatsapp"></ion-icon>
+              <ion-icon class="text-2xl -m-1.5 text-sky-800 group-hover:text-white" name="logo-whatsapp"></ion-icon>
             </a>
-          </div> 
+          </div>
+
 
 
           <!--Facebook-->
-          <div class="flex items-center justify-center 
+          <div class="group flex items-center justify-center 
             bg-white hover:bg-sky-400
             transition-colors duration-300 ease-in-out
             rounded-full w-12 h-12">
             <a target="_blank" rel="noopener" href="https://www.facebook.com/karina.hernandez.783378">
-              <ion-icon class="text-2xl -m-1.5 text-sky-800 hover:text-white" name="logo-facebook"></ion-icon>
+              <ion-icon class="text-2xl -m-1.5 text-sky-800 group-hover:text-white" name="logo-facebook"></ion-icon>
             </a>
           </div> 
 
 
           <!--Tiktok-->
-          <div class="flex items-center justify-center 
+          <div class="group flex items-center justify-center 
             bg-white hover:bg-gradient-to-bl from-cyan-400 via-black/50 to-red-400
             transition-colors duration-300 ease-in-out
             rounded-full w-12 h-12">
             <a target="_blank" rel="noopener" href="https://www.tiktok.com/@c.Hemodiálisisisvid?is_from_webapp=1&sender_device=pc">
-              <ion-icon class="text-2xl -m-1.5 text-sky-800 hover:text-white" name="logo-tiktok"></ion-icon>
+              <ion-icon class="text-2xl -m-1.5 text-sky-800 group-hover:text-white" name="logo-tiktok"></ion-icon>
             </a>
           </div>
           
           <!-- Instagram -->
-          <div class="flex items-center justify-center 
+          <div class="group flex items-center justify-center 
             bg-white hover:bg-gradient-to-tr from-yellow-400 via-red-500 to-violet-800
             transition-colors duration-300 ease-in-out
             rounded-full w-12 h-12">
             <a target="_blank" rel="noopener" href="https://www.instagram.com/c.hemodialisis_mas_vida2">
-              <ion-icon class="text-2xl -m-1.5 text-sky-800 hover:text-white" name="logo-instagram"></ion-icon>
+              <ion-icon class="text-2xl -m-1.5 text-sky-800 group-hover:text-white" name="logo-instagram"></ion-icon>
             </a>
           </div>
           
