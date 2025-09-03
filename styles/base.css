@@ -11,6 +11,10 @@
     background-image: url(/assets/heroAboutUs.jpg);
 }
 
+#heroSectionContactUs{
+    background-image: url(/assets/heroContactUs.jpg);
+}
+
 #services{
     background-image: url(/assets/health.jpg);
 }
